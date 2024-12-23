@@ -1,0 +1,61 @@
+query Fetch
+{
+  queryCompaniesCollectionOfValuesContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        
+        image {
+          id
+          url
+        }
+      }
+
+      about {
+        title
+        description
+        
+        image {
+          url
+        }
+      }
+
+      features {
+        title
+
+        features {
+          title
+          
+          icon {
+            url
+          }
+        }
+      }
+
+      benefits {
+        title
+        description
+        
+        icon {
+          url
+        }
+      }
+
+      movingConditions {
+        title
+        description
+        
+        image {
+          url
+        }
+      }
+    }
+  }
+}

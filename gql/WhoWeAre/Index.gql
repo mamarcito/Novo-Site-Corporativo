@@ -1,0 +1,82 @@
+query Fetch
+{
+  queryWhoWeAreContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        
+        image {
+          id
+          url
+        }
+      }
+
+      historial {
+        title
+        description
+        
+        image {
+          url
+        }
+      }
+
+      characteristics {
+        title
+        description
+        
+        icon {
+          url
+        }
+      }
+
+      valuesPorposeTitle
+      valuesPorposeDescription
+
+      valuesPorposeButton {
+        label
+        link
+      }
+
+      valuesPorposeList {
+        title
+
+        icon {
+          url
+        }
+      }
+
+      values {
+        title
+        description
+
+        list {
+          item
+        }
+
+        image {
+          url
+        }
+      }
+    }
+  }
+
+  queryRecognitionsListContents {
+    id
+    
+    data: flatData {
+      name
+      description
+      
+      image {
+        url
+      }
+    }
+  }
+}

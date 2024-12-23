@@ -1,0 +1,81 @@
+query Fetch
+{
+  queryOpenAccountContents {
+    data: flatData {
+       menu {
+        menu {
+          name
+        }
+      }
+       
+      bcsApp {
+      title
+      description
+      btnLeft {
+        label
+        link
+      }
+      btnRight {
+        label
+        link
+      }
+    }
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        
+        image {
+          id
+          url
+        }
+      }
+
+      about {
+        title
+        description
+        
+        image {
+          url
+        }
+      }
+      
+      accountType {
+        type
+        name
+        description
+        
+        button {
+          label
+          link
+        }
+
+        image {
+          url
+        }
+      }
+    }
+  }
+  
+  queryFaqsListContents {
+    id
+    
+    data: flatData {
+      title
+      description
+
+      categories {
+        id
+
+        data: flatData {
+          category
+        }
+      }
+    }
+  }
+}

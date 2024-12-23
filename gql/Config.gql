@@ -1,0 +1,40 @@
+query Fetch
+{
+  queryConfigContents {
+    data: flatData {
+      address
+      secondaryAddress
+      
+      needHelp {
+        title
+
+        link {
+          label
+          link
+        }
+
+        icon {
+          url
+        }
+      }
+
+      links {
+        title
+
+        links {
+          label
+          link
+        }
+      }
+      
+      socialNetworks {
+        name
+        link
+
+        icon {
+          url
+        }
+      }
+    }
+  }
+}

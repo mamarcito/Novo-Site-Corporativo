@@ -1,0 +1,97 @@
+query Fetch($top: Int, $orderby: String) {
+  queryCompaniesContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+
+        image {
+          id
+          url
+        }
+      }
+
+      shortcuts {
+        title
+        description
+        link
+
+        icon {
+          url
+        }
+      }
+
+      about {
+        title
+        description
+
+        image {
+          url
+        }
+      }
+
+      simuladorDP {
+        id
+        data: flatData {
+          icon {
+            id
+            url
+          }
+          title
+          min
+          max
+          juros
+          file {
+            id
+            url
+          }
+          timeline {
+            tempo
+            rate
+            day
+            month
+          }
+        }
+      }
+
+      simuladorCredito {
+        id
+        data: flatData {
+          icon {
+            id
+            url
+          }
+
+          file {
+            id
+            url
+          }
+          title
+          min
+          max
+          juros
+        }
+      }
+    }
+  }
+
+  queryFinancialTipsBlogContents(top: $top, orderby: $orderby) {
+    id
+    created
+
+    data: flatData {
+      title
+      excerpt
+
+      image {
+        url
+      }
+    }
+  }
+}

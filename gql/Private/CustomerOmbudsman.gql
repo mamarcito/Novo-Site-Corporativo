@@ -1,0 +1,9 @@
+query Fetch
+{
+  queryCustomerOmbudsmanContents {
+   id
+  data: flatData {
+    content
+  }
+ }
+}

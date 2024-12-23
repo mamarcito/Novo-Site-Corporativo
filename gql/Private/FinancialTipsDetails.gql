@@ -1,0 +1,27 @@
+query Fetch ($id: String!)
+{
+  findFinancialTipsBlogContent(id: $id) {
+    id
+    created
+    
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        
+        image {
+          id
+          url
+        }
+      }
+
+      description
+    }
+  }
+}

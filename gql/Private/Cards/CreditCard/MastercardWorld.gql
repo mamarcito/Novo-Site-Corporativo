@@ -1,0 +1,55 @@
+query Fetch {
+  queryMastercardWorldContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+
+        image {
+          id
+          url
+        }
+      }
+
+      about {
+        title
+        description
+
+        image {
+          url
+        }
+      }
+
+      benefits {
+        title
+        description
+
+        icon {
+          url
+        }
+      }
+
+      features {
+        title
+
+        list {
+          item
+        }
+      }
+
+      usageNetwork {
+        title
+
+        list {
+          item
+        }
+      }
+    }
+  }
+}

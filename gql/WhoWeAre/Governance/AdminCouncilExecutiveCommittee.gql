@@ -1,0 +1,61 @@
+query Fetch
+{
+  queryAdminCouncilExecutiveCommitteeContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        
+        image {
+          id
+          url
+        }
+      }
+
+  
+    listBodies {
+      menu {
+      item
+    }
+      title
+      list {
+         listSocias {
+          list {
+            item
+          }
+        }
+      }
+      }
+
+      boardOfDirectorsTitle
+      
+      boardOfDirectors {
+        name
+        position
+        description
+        
+        image {
+          url
+        }
+      }
+      
+      executiveBoardTitle
+      
+      executiveBoard {
+        name
+        position
+        description
+      }
+      
+      executiveBoardImage {
+        url
+      }
+    }
+  }
+}

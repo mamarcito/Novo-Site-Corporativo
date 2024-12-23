@@ -1,0 +1,60 @@
+query Fetch
+{
+  queryTheAdoptedOdsContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        image {
+          id
+          url
+        }
+      }
+      titleAbout
+      descriptionAbout
+      titleODS
+      descriptionODS
+      ods {
+        title
+        description
+        number
+        icon {
+          id
+          url
+        }
+      }
+      titleUnitedNations
+      descriptionUnitedNations
+      imgUnitedNations {
+        id
+        url
+      }
+      mainUnitedNations
+      descriptionMain
+      mains {
+        title
+        icon {
+          id
+          url
+        }
+        main {
+          id
+          data:flatData {
+            number
+            title
+            description
+            img{
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}

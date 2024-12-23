@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6, .title
+    font-family: $secondary-theme-font
+    font-weight: 900
+
+p, a, buttons, li
+    font-family: $primary-theme-font
+
+.primary-font-text
+    font-family: $primary-theme-font !important
+
+.secondary-font-text
+    font-family: $secondary-theme-font !important
+
+@mixin gradient-text-color($type)
+    @if($type == primary)
+        background: -webkit-linear-gradient(right, $primary-gradient-theme-color)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+    @if($type == secondary)
+        background: -webkit-linear-gradient(left bottom, darken($secondary-theme-color, 20%), lighten($secondary-theme-color, 20%))
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+.primary-text-color
+    color: $primary-theme-color
+
+.secondary-text-color
+    color: $secondary-theme-color
+
+.primary-gradient-text
+    @include gradient-text-color(primary)
+
+.secondary-gradient-text
+    @include gradient-text-color(secondary)
+
+.text-justify
+    text-align: justify !important

@@ -1,0 +1,15 @@
+query Fetch
+{
+ queryPricingContents {
+   id
+  data: flatData {
+    content
+    documents {
+      name
+      document {
+        url
+      }
+    }
+  }
+ }
+}

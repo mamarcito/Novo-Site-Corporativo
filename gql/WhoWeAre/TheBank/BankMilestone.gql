@@ -1,0 +1,31 @@
+query Fetch
+{
+  queryBankMilestoneContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        
+        image {
+          id
+          url
+        }
+      }
+
+      events {
+        year
+        
+        events {
+          title
+          description
+        }
+      }
+    }
+  }
+}

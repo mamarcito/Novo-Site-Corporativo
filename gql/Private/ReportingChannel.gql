@@ -1,0 +1,43 @@
+query Fetch
+{
+  queryReportingChannelContents {
+    id
+    
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+
+        image {
+          id
+          url
+        }
+      }
+
+      about {
+        title
+        description
+
+        image {
+          id
+          url
+        }
+      }
+
+    faqs {
+      title
+      description
+    }
+
+    irregularity {
+      type
+    }
+    }
+  }
+}

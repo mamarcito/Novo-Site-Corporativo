@@ -1,0 +1,35 @@
+query Fetch
+{
+  queryRecognitionsContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        
+        image {
+          id
+          url
+        }
+      }
+    }
+  }
+
+  queryRecognitionsListContents {
+    id
+    
+    data: flatData {
+      name
+      description
+      
+      image {
+        url
+      }
+    }
+  }
+}

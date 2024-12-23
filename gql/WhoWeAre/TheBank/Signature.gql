@@ -1,0 +1,47 @@
+query Fetch
+{
+  querySignatureContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        
+        image {
+          id
+          url
+        }
+      }
+
+      aboutTitle
+      aboutDescription
+      aboutAlert
+      
+      aboutFeatures {
+        item
+      }
+      
+      ourTitle
+      ourDescription
+      
+      ourCards {
+        title
+        description
+      }
+
+      campaignTitle
+      campaignDescription
+
+      campaigns {
+        image {
+          url
+        }
+      }
+    }
+  }
+}

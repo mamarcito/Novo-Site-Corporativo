@@ -1,0 +1,75 @@
+query Fetch
+{
+  queryCompaniesAccountContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        
+        image {
+          id
+          url
+        }
+      }
+
+      about {
+        title
+        description
+        
+        image {
+          url
+        }
+      }
+
+      requirements {
+        title
+        description
+
+        document {
+          name
+
+          document {
+            url
+          }
+        }
+
+        requirements {
+          requirement
+          description
+          
+          icon {
+            url
+          }
+        }
+      }
+      
+      benefits {
+        title
+        description
+        
+        icon {
+          url
+        }
+      }
+
+      bcsApp {
+      title
+      description
+      btnLeft {
+        label
+        link
+      }
+      btnRight {
+        label
+        link
+      }
+    }
+    }
+  }
+}

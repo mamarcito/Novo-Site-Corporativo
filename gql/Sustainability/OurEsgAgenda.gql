@@ -1,0 +1,88 @@
+query Fetch
+{
+  queryOurEsgAgendaContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        
+        image {
+          id
+          url
+        }
+      }
+      about {
+        title
+        description
+        image {
+          id
+          url
+        }
+      }
+      titleGovernance
+      descriptionGovernance
+      subDescriptionGovernance
+      governance {
+        title
+        icon {
+          id
+          url
+        }
+      }
+      titleOrganigrama
+      strategyOrganigrama {
+        title
+        description
+      }
+      organigrama {
+        id
+        url
+      }
+      titleDashboard
+      dashboardData {
+        title
+        description
+        img {
+          id
+          url
+        }
+      }
+      titleMHAIS
+      descriptionMHAIS
+      pointsMHAIS {
+        text
+      }
+      about2 {
+        title
+        description
+        image {
+          id
+          url
+        }
+      }
+      about3 {
+        title
+        description
+        image {
+          id
+          url
+        }
+      }
+      titleBettingSectors
+      cardsBettingSectors {
+        title
+        price
+        img {
+          id
+          url
+        }
+      }
+    }
+  }
+}

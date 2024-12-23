@@ -1,0 +1,41 @@
+query Fetch
+{
+  querySocietalStructureContents {
+    data: flatData {
+      banner {
+        title
+        subtitle
+        description
+
+        button {
+          label
+          link
+        }
+        
+        image {
+          id
+          url
+        }
+      }
+
+      timeline {
+        title
+        description
+
+        list {
+          item
+        }
+
+        image {
+          url
+        }
+      }
+      title
+      
+      statistic {
+        percent
+        label
+      }
+    }
+  }
+}

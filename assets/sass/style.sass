@@ -1,0 +1,131 @@
+*
+    transition: all 300ms
+
+*, html, body
+    scroll-behavior: smooth
+    scroll-margin-top: 55px
+
+html, body
+    overflow-x: hidden
+
+.bg-primary-theme
+    background-color: $primary-theme-color !important
+
+.bg-secondary-theme
+    background-color: $secondary-theme-color !important
+
+.filter-white
+    filter: brightness(0) invert(1)
+
+.border-gradient
+    position: relative
+    border: 2px solid transparent
+    border-image: linear-gradient(45deg, rgba(157, 112, 18, 0.5), rgba(255, 227, 176, 0.5)) 10
+    padding: 6px
+    background: url('static/images/img2.png') right no-repeat
+    transition: 0.2s all !important
+
+    &:hover
+        color: #9D7012
+        border: 2px solid #fff
+
+        &::after
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: rgba(128, 128, 128, 0.1)
+            z-index: -1
+            border-radius: 0px
+
+.border-gradient-rounded
+    padding-block: 2px
+    padding-inline: 14px
+    border-radius: 5px
+    background: linear-gradient(45deg, rgba(157, 112, 18, 0.5), rgba(255, 227, 176, 0.5))
+
+    & > *
+        background: white
+        border-radius: 4px
+
+.background-gray
+    background: #FBFAFB
+
+.gray
+    color: #5A7486
+
+.background-golden
+    background: rgba(203, 160, 82, 0.1)
+
+.button-primary
+    background: linear-gradient(to right,#9D7012, #FFE3B0)
+    color: #fff
+    padding: 8px 30px
+    border-radius: 6px
+    font-weight: 500
+    transition: .9s all
+    border-color: #FFE3B0
+
+    &:hover
+        background: transparent
+        color: #9D7012
+
+.button-primary-nogradient
+    @extend .button-primary
+    background: linear-gradient(92.87deg, #73541F -78.5%, #D5AD5E 71.55%) !important
+    &:hover
+        color: #9D7012 !important
+        border: 1px solid #9D7012 !important
+        background: #fff !important
+
+.square
+    @extend .background-golden
+    height: 100%
+    padding: 20px
+
+.button-mybcs
+    padding: 4px 30px
+    border: 1px solid #F6F5FB
+    background: rgb(111,84,144)
+    background: linear-gradient(104deg, rgba(111,84,144,1) 10%, rgba(174,131,81,1) 100%)
+    &:hover
+        @extend .button-mybcs
+
+.rotate-0
+    transform: rotate(0deg)
+
+.rotate-45
+    transform: rotate(45deg)
+
+.rotate-90
+    transform: rotate(90deg)
+
+.rotate-135
+    transform: rotate(135deg)
+
+.rotate-180
+    transform: rotate(180deg)
+
+.rotate-225
+    transform: rotate(225deg)
+
+.rotate-270
+    transform: rotate(270deg)
+
+.rotate-315
+    transform: rotate(315deg)
+
+.rotate-360
+    transform: rotate(360deg)
+
+.with-bar
+    &::after
+        content: url(/images/icons/bar.svg)
+
+@keyframes rotateImage
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)
