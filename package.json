@@ -29,7 +29,7 @@
     "ipx": "^3.0.0",
     "npm": "^10.5.2",
     "sass": "^1.70.0",
-    "sweetalert2": "^11.9.0",
+    "sweetalert2": "^11.14.5",
     "swiper": "^11.0.6",
     "vue-currency-input": "^3.1.0",
     "vue3-html2pdf": "^1.1.2"
